@@ -1,55 +1,57 @@
 # 📚 Estrutura de Dados II - Engenharia de Computação
 
-Este repositório reúne o conhecimento teórico e prático consolidado durante a disciplina de **Estrutura de Dados II**. O foco principal é a análise de algoritmos, a implementação de estruturas dinâmicas avançadas e a aplicação de Programação Orientada a Objetos para otimização de sistemas complexos.
+Este repositório reúne o conhecimento teórico e as implementações práticas desenvolvidas durante a disciplina de **Estrutura de Dados II**. O conteúdo abrange desde a análise rigorosa de algoritmos até a aplicação de estruturas de dados dinâmicas e balanceadas para otimização de sistemas.
 
 ---
 
 ## 🔬 1. Análise de Algoritmos e Complexidade
-Fundamentação matemática para medir a eficiência de um código em termos de tempo e espaço.
+Fundamentação para medir a eficiência de códigos em termos de tempo e espaço.
 
 *   **Notação Big O ($O$):** Define o limite superior de crescimento, representando o **pior caso** de execução.
-*   **Notações $\Omega$ e $\Theta$:** Representam, respectivamente, o limite inferior (melhor caso) e o comportamento exato (médio).
-*   **Inventário de Funções:** De $O(1)$ (constante) e $O(\log n)$ (muito eficiente) até $O(n^2)$ e $O(n!)$ (ineficientes para grandes entradas).
+*   **Comportamentos Assintóticos:** Estudo das notações $\Omega$ (limite inferior/melhor caso) e $\Theta$ (comportamento médio/exato).
+*   **Inventário de Funções:** Escala de eficiência partindo de $O(1)$ (constante) e $O(\log n)$ (logarítmico) até $O(n^2)$ (quadrático) e $O(n!)$ (fatorial).
 
 ---
 
 ## 🔍 2. Algoritmos de Busca e Ordenação
-Técnicas para manipulação eficiente de dados em arrays e coleções.
+Técnicas essenciais para a manipulação e organização de grandes volumes de dados.
 
-*   **Busca Sequencial:** Varredura item a item em listas não ordenadas.
-*   **Busca Binária:** Algoritmo de alta performance ($O(\log n)$) exclusivo para vetores ordenados.
+*   **Busca Sequencial:** Varredura item a item em listas, com complexidade $O(n)$.
+*   **Busca Binária:** Algoritmo de alta performance ($O(\log n)$) exclusivo para vetores ordenados, baseado em divisões sucessivas.
+*   **Quick Sort:** Método de ordenação eficiente que utiliza a estratégia de "Dividir e Conquistar" através de pivôs e partição.
 
 ---
 
 ## 🛠️ 3. Estruturas de Dados Dinâmicas
-Implementações baseadas em nós e ponteiros que permitem o gerenciamento flexível da memória.
+Implementações baseadas em nós e ponteiros para gerenciamento flexível da memória.
 
 ### 📋 Listas
-*   **Lista Encadeada Simples:** Sequência de nós onde cada um aponta para o próximo.
-*   **Lista Duplamente Encadeada:** Cada nó possui referências para o `anterior` e o `proximo`, permitindo navegação bidirecional e reversa.
-*   **Lista Circular:** O último nó aponta de volta para o primeiro, criando um ciclo contínuo ideal para buffers e agendamentos cíclicos.
+*   **Lista Encadeada Simples:** Sequência de nós onde cada elemento aponta para o próximo[cite: 13].
+*   **Lista Duplamente Encadeada:** Permite navegação bidirecional (anterior e próximo), essencial para históricos e navegação reversa.
+*   **Lista Circular:** O último nó aponta para o primeiro, criando um ciclo contínuo ideal para agendamentos cíclicos e buffers.
 
 ### 🚶 Filas e Pilhas (FIFO & LIFO)
-*   **Fila (Queue):** Estrutura de atendimento por ordem de chegada (*First In, First Out*).
-*   **Pilha (Stack):** Estrutura baseada no último a entrar (*Last In, First Out*), essencial para históricos, funções "undo" e recursão.
+*   **Fila (Queue):** Atendimento por ordem de chegada (*First In, First Out*).
+*   **Pilha (Stack):** Operações no topo (*Last In, First Out*), fundamental para recursão e históricos de busca.
 
 ---
 
-## 🌳 4. Estruturas Não-Lineares (Árvores)
-Gerenciamento hierárquico de dados para buscas e remoções otimizadas.
+## 🌳 4. Estruturas Hierárquicas (Árvores)
+Organização de dados que permite buscas e remoções otimizadas em tempo logarítmico.
 
-*   **Árvore Binária de Busca (BST):** Organização recursiva onde valores menores ficam à esquerda e maiores à direita.
-*   **Travessias (Percursos):** Métodos sistemáticos de visita aos nós: Inorder, Preorder, Postorder e BFS (Busca em Nível).
-*   **Árvore AVL:** Árvore binária auto-balanceada que utiliza rotações (LL, RR, LR, RL) para manter sua altura controlada em $O(\log n)$.
+*   **Árvore Binária de Busca (BST):** Estrutura onde valores menores ficam à esquerda e maiores à direita.
+    *   **Travessias:** Implementação de percursos Pré-Ordem, Em Ordem e Pós-Ordem.
+    *   **Gestão de Nós:** Lógica recursiva para inserção e remoção (tratando casos de 0, 1 ou 2 filhos).
+*   **Árvore AVL:** Evolução da BST que utiliza rotações (LL, RR, LR, RL) para manter o balanceamento automático e garantir performance $O(\log n)$.
 
 ---
 
 ## 🏗️ 5. Princípios de POO Aplicados
-A disciplina foca no uso profissional de Java para implementar essas estruturas.
+O desenvolvimento de todas as estruturas utiliza conceitos avançados de Java.
 
-*   **Abstração e Herança:** Uso de classes abstratas (`Usuario`, `Pessoa`) e especializações via herança.
-*   **Polimorfismo:** Sobrescrita de métodos (`@Override`) para comportamentos específicos em classes filhas.
-*   **Encapsulamento:** Proteção de atributos e uso de métodos acessores para integridade dos dados.
+*   **Encapsulamento:** Uso de atributos privados/protegidos e métodos acessores (Getters/Setters).
+*   **Herança e Polimorfismo:** Especialização de classes (ex: `UsuarioComum` e `UsuarioVerificado`) e sobrescrita de métodos.
+*   **Abstração:** Criação de classes base abstratas para padronização de comportamentos.
 
 ---
 <div align="center">
